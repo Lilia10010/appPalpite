@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JP - jogo para palpites</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>QUAL É O NÚMERO?</h1>
+        <div class="divider"><div></div></div>
+        <div class="wrapper-display">
+          <div class="return-message"></div>
+          <div class="wrapper-display-seguimento">
+            <div class="wrapper-display-one">
+              <div class="seguimento seguimento-one seguimento01"></div>
+              <div class="seguimento seguimento-two seguimento02"></div>
+              <div class="seguimento seguimento-three seguimento03"></div>
+              <div class="seguimento seguimento-four seguimento04"></div>
+              <div class="seguimento seguimento-five seguimento05"></div>
+              <div class="seguimento seguimento-six seguimento06"></div>
+              <div class="seguimento seguimento-seven seguimento07"></div>
+            </div>
+            <div class="wrapper-display-two displayOff">
+              <div class="seguimento seguimento-one seguimento11"></div>
+              <div class="seguimento seguimento-two seguimento12"></div>
+              <div class="seguimento seguimento-three seguimento13"></div>
+              <div class="seguimento seguimento-four seguimento14"></div>
+              <div class="seguimento seguimento-five seguimento15"></div>
+              <div class="seguimento seguimento-six seguimento16"></div>
+              <div class="seguimento seguimento-seven seguimento17"></div>
+            </div>
+            <div class="wrapper-display-three displayOff">
+              <div class="seguimento seguimento-one seguimento21"></div>
+              <div class="seguimento seguimento-two seguimento22"></div>
+              <div class="seguimento seguimento-three seguimento23"></div>
+              <div class="seguimento seguimento-four seguimento24"></div>
+              <div class="seguimento seguimento-five seguimento25"></div>
+              <div class="seguimento seguimento-six seguimento26"></div>
+              <div class="seguimento seguimento-seven seguimento27"></div>
+            </div>
+          </div>
+        </div>
+        <div class="refresh">
+          <div class="refresh-disabled">
+            <button class="btn-new-game" onClick="window.location.reload()">
+              <img src="./assets/icon-refresh.svg" alt="icone de atualizar" />
+              NOVA APARTIDA
+            </button>
+          </div>
+        </div>
+
+        <form id="form_data">
+          <input
+            type="number"
+            maxlength="3"
+            minlength="1"
+            min="0"
+            max="300"
+            name="valueuser"
+            id="valueuser"
+            placeholder="Digite um número"
+          />
+          <button class="btn-submit" id="button" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
