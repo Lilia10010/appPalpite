@@ -128,18 +128,10 @@ input {
 .displayOnn {
   display: block;
 }
-.wrapper-display-one {
-  height: 100px;
-  width: 55px;
-  position: relative;
-}
-.wrapper-display-two {
-  height: 100px;
-  width: 55px;
-  position: relative;
-}
+.wrapper-display-one,
+.wrapper-display-two,
 .wrapper-display-three {
-  height: 100px;
+  height: 127px;
   width: 55px;
   position: relative;
 }
